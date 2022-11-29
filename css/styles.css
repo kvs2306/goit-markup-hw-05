@@ -632,7 +632,8 @@ p {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay:hover .overlay-descr {
+.overlay:hover .overlay-descr,
+.overlay:focus .overlay-descr {
   transform: translateY(0);
 }
 
