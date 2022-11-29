@@ -12,6 +12,8 @@
   --social-link-color: #afb1b8;
   --overlay-bgd: rgba(33, 150, 243, 0.9);
   --modal-vindow-bgd: rgba(0, 0, 0, 0.2);
+  --modal-box-shadov: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -671,4 +673,22 @@ p {
   min-height: 581px;
 
   background: var(--bgd-color);
+  box-shadow: var(--modal-box-shadov);
+  border-radius: 4px;
+}
+
+.btn-close {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: var(--bgd-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
 }
